@@ -2,26 +2,26 @@
 
 Currently state-of-the-art single-stage object detector from point cloud on KITTI Benchmark, running with 32FPS.
 
-**Authors**: Wu Zheng, Weiliang Tang, Sijin Chen, Li Jiang, Chi-Wing Fu.
+**Authors**: [Wu Zheng](https://github.com/Vegeta2020), Weiliang Tang, Sijin Chen, [Li Jiang](https://github.com/llijiang), Chi-Wing Fu.
 
 ## AP on KITTI Dataset
 
 Val Split (11 recall points):
 ```
-Car  AP:98.97, 90.10, 89.49
-bev  AP:90.58, 88.80, 87.88
-3d   AP:89.99, 79.88, 78.93
-aos  AP:98.90, 89.89, 89.11
-car AP(Average Precision)@0.70, 0.50, 0.50:
-bbox AP:98.97, 90.10, 89.49
-bev  AP:99.03, 90.22, 89.74
-3d   AP:99.00, 90.18, 89.68
-aos  AP:98.90, 89.89, 89.11
+Car  AP:98.85, 90.20, 89.58
+bev  AP:90.51, 88.86, 87.95
+3d   AP:90.00, 79.86, 78.83
+aos  AP:98.77, 89.99, 89.24
+Car  AP(Average Precision)@0.70, 0.50, 0.50:
+bbox AP:98.85, 90.20, 89.58
+bev  AP:98.92, 90.29, 89.81
+3d   AP:99.00, 90.22, 89.70
+aos  AP:98.77, 89.99, 89.24
 ```
 
 Test Split: [Submission link](http://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=b4e17f75f5baa917c4f250e832aace71682c3a84)
 
-You may download the pre-trained model [here](https://drive.google.com/file/d/1ZpGcmkpNj9RVeQylM_xqMZ_b4RGoKQFJ/view?usp=sharing), which is trained on the train split (3712 samples).
+You may download the pre-trained model [here](https://drive.google.com/file/d/1SElYNQCsr4gctqLxmB6Fc4t7Ed8SgBgs/view?usp=sharing), which is trained on the train split (3712 samples).
 
 ## Pipeline
 
@@ -65,7 +65,7 @@ $ python test.py
 ```
 
 ## Citation
-If you find this work useful in your research, please consider cite:
+If you find this work useful in your research, please star our repository and consider citing:
 ```
 @inproceedings{zheng2020ciassd,
   title={CIA-SSD: Confident IoU-Aware Single-Stage Object Detector From Point Cloud},
@@ -81,3 +81,7 @@ This codebase is released under the Apache 2.0 license.
 
 ## Acknowledgement
 Our code are mainly based on [Det3D](https://github.com/poodarchu/det3d), thanks for their contributions! We also thank for the reviewers's valuable comments on this paper.
+
+
+## Contact
+If you have any question or suggestion about this repo, please feel free to contact me (zheng-w10@foxmail.com)
